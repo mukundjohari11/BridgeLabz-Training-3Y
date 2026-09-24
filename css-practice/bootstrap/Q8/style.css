@@ -1,0 +1,70 @@
+/* Custom CSS for Pricing Plans */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Pricing card styling */
+.pricing-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Hover effect */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Pro plan */
+.pro-plan {
+    background-color: #0d6efd;
+    color: white;
+}
+
+
+/* Remove white background from Pro plan list items */
+.pro-plan .list-group-item {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* Popular badge */
+.popular-badge {
+    background-color: #ffc107;
+    color: #212529;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+
+/* Buttons */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+
+    .pricing-card {
+        margin-bottom: 10px;
+    }
+
+}

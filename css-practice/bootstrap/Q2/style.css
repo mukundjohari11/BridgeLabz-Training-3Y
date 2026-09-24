@@ -1,0 +1,39 @@
+/* Custom CSS for Personal Portfolio */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills box */
+.skills-box {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+/* Button hover effect */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive profile image */
+@media (max-width: 576px) {
+
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+
+}

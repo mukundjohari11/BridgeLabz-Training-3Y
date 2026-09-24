@@ -1,0 +1,51 @@
+/* Custom CSS for Notifications Dashboard */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header notification icon */
+.notification-icon {
+    font-size: 35px;
+}
+
+
+/* Notification card */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* Summary box */
+.summary-box {
+    border-radius: 10px;
+}
+
+
+/* Summary item hover effect */
+.summary-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Alert styling */
+.alert {
+    border-radius: 8px;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+
+    .notification-icon {
+        font-size: 28px;
+    }
+
+}

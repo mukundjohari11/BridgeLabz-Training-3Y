@@ -1,0 +1,47 @@
+/* Custom CSS for Task Tracker */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Pending task counter */
+.pending-badge {
+    font-size: 20px;
+    min-width: 40px;
+    padding: 8px 10px;
+}
+
+
+/* Task item transition */
+.task-item {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+/* Task hover effect */
+.task-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(4px);
+}
+
+
+/* Card rounded corners */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+
+    .task-item h5 {
+        font-size: 1rem;
+    }
+
+    .task-item {
+        padding: 1rem !important;
+    }
+
+}

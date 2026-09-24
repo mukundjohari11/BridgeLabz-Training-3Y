@@ -1,0 +1,158 @@
+/* =========================================
+   CUSTOM BOOTSTRAP THEME
+   ========================================= */
+
+:root {
+    /* Override Bootstrap theme variables */
+    --bs-primary: #6f42c1;
+    --bs-primary-rgb: 111, 66, 193;
+
+    /* Custom Bootstrap font variable */
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+
+    /* Custom theme colors */
+    --theme-color: #6f42c1;
+    --theme-dark: #45267a;
+    --theme-light: #f3edff;
+}
+
+
+/* Apply Google Font */
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #ffffff;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.custom-navbar {
+    background-color: var(--theme-color);
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #e8dcff;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.blog-hero {
+    background-color: var(--theme-light);
+}
+
+.theme-text {
+    color: var(--theme-color);
+}
+
+
+/* =========================================
+   CUSTOM BUTTON
+   ========================================= */
+
+.theme-button {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+}
+
+.theme-button:hover {
+    background-color: var(--theme-dark);
+    color: white;
+}
+
+
+/* =========================================
+   BLOG CARDS
+   ========================================= */
+
+.blog-card {
+    border: none;
+    border-top: 4px solid var(--theme-color);
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    height: 260px;
+    object-fit: cover;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   BADGE
+   ========================================= */
+
+.theme-badge {
+    background-color: var(--theme-color);
+}
+
+
+/* =========================================
+   BLOG LINKS
+   ========================================= */
+
+.theme-link {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.theme-link:hover {
+    color: var(--theme-dark);
+}
+
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+
+.about-section {
+    background-color: var(--theme-light);
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.custom-footer {
+    background-color: var(--theme-dark);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 576px) {
+
+    .blog-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .blog-card img {
+        height: 220px;
+    }
+
+}
